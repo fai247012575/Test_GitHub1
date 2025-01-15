@@ -1,39 +1,9 @@
 fileFormatVersion: 2
-guid: 6cc9552ecf36cfa4e8d48bb7dc904f72
+guid: 1c2b0e9a688b26f42a5d80ce64857f7d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch01_body
-    second: {fileID: 2100000, guid: b3eca03e565c4a246a5af7cc2251fdf2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch01_hair
-    second: {fileID: 2100000, guid: 8946d51d41b63bc4d913340fed598609, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch01_1001_Diffuse
-    second: {fileID: 2800000, guid: 389635a7f8cfd9143bd5361d5ac7b710, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch01_1001_Glossiness
-    second: {fileID: 2800000, guid: 14fac68a321ced544b2761e89159e629, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch01_1001_Normal
-    second: {fileID: 2800000, guid: 9eee1aa599f460741b666d8a5a3b2d98, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch01_1001_Specular
-    second: {fileID: 2800000, guid: aa64405fe2e796544b38f84e42072853, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -61,7 +31,43 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Jumping
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 0
+      lastFrame: 57
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.25115207
+        functionName: Jump
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: cc88472b00e5daf4da3781dd80110060, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -107,10 +113,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 1c2b0e9a688b26f42a5d80ce64857f7d
-  - fee52e64280773c45a67c3237a1c3d9c
-  - beecac92df0083b488044a4d644addfb
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -899,11 +902,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 6cc9552ecf36cfa4e8d48bb7dc904f72, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

@@ -30,10 +30,13 @@ public class PlayerController : MonoBehaviour
     private float verticalVelocity;
 
     private CharacterController characterController;
+
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -46,6 +49,14 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveVector = context.ReadValue<Vector2>();
+        if(moveVector.magnitude > 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
     }
 
     private void Move()
@@ -76,7 +87,8 @@ public class PlayerController : MonoBehaviour
     {
         if(characterController.isGrounded && context.performed)
         {
-            Jump();
+            animator.Play("Jumping");
+            //Jump();
         }
     }
 
