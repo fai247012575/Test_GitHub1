@@ -407,8 +407,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.019526154, y: 0.980441, z: -0.14247742, w: -0.13436694}
-  m_LocalPosition: {x: 0.7425292, y: 1.7008314, z: -7.6775527}
+  m_LocalRotation: {x: -0.1704707, y: 0.0050229584, z: -0.00086863065, w: -0.9853496}
+  m_LocalPosition: {x: 0.004186717, y: 2.2581425, z: -12.634243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -461,11 +461,35 @@ MonoBehaviour:
     m_ActionId: e51b1e38-61ec-4163-a39a-b98b57005504
     m_ActionName: Controls/Move[/DualSenseGamepadHID/leftStick,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1828744830}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnLook
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 24203e07-a9b7-4847-92bc-b9a8d2607613
     m_ActionName: Controls/Look[/DualSenseGamepadHID/rightStick,/Mouse/delta]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1828744830}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6999e878-8b7f-495a-8163-3c31c3478f33
     m_ActionName: Controls/Jump[/DualSenseGamepadHID/buttonSouth,/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
@@ -486,6 +510,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  lookSenesitivity: 10
+  jumpHeight: 0.5
+  gravity: 9.81
 --- !u!143 &1828744831
 CharacterController:
   m_ObjectHideFlags: 0
@@ -522,7 +549,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6cc9552ecf36cfa4e8d48bb7dc904f72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.042565405
+      value: -0.042565558
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6cc9552ecf36cfa4e8d48bb7dc904f72, type: 3}
       propertyPath: m_LocalPosition.y
@@ -530,7 +557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6cc9552ecf36cfa4e8d48bb7dc904f72, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.129959
+      value: -10.129953
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6cc9552ecf36cfa4e8d48bb7dc904f72, type: 3}
       propertyPath: m_LocalRotation.w
